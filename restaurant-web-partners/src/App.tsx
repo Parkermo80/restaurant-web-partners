@@ -32,13 +32,13 @@ function RWPLogo({ size = 'md', light = false }: { size?: 'sm' | 'md' | 'lg'; li
   );
 }
 
-export default function App() {
+export default function HospitalityGrowthAgencyWebsite() {
   const processSteps = [
-    ['01', 'Strategy Call', 'We start with a conversation about your restaurant, your goals, challenges, operations, and what growth looks like for you.', '01'],
-    ['02', 'Custom Game Plan', 'We build a tailored strategy specific to your business and collaborate with our tech partner to design the right digital foundation for long-term growth.', '02'],
-    ['03', 'Review & Refine', 'We meet together to walk through the plan, designs, timelines, and deliverables. Your questions shape the final plan to ensure it is the right fit.', '03'],
-    ['04', 'Onboard & Kickoff', 'Once everything is approved, we finalize the agreement and kick things off. Your project timeline officially begins.', '04'],
-    ['05', 'Build, Launch & Grow', 'We execute the plan, keep you informed every step of the way, and deliver monthly reporting so you can see real, measurable growth.', '05'],
+    ['01', 'Strategy Call', 'We start with a conversation about your restaurant, your goals, challenges, operations, and what growth looks like for you.'],
+    ['02', 'Custom Game Plan', 'We build a tailored strategy specific to your business and collaborate with our tech partner to design the right digital foundation for long-term growth.'],
+    ['03', 'Review & Refine', 'We meet together to walk through the plan, designs, timelines, and deliverables. Your questions shape the final plan to ensure it is the right fit.'],
+    ['04', 'Onboard & Kickoff', 'Once everything is approved, we finalize the agreement and kick things off. Your project timeline officially begins.'],
+    ['05', 'Build, Launch & Grow', 'We execute the plan, keep you informed every step of the way, and deliver monthly reporting so you can see real, measurable growth.'],
   ] as const;
 
   const serviceLinks = [
@@ -66,6 +66,8 @@ export default function App() {
     ['Monthly visibility reporting with clear performance insight', 'Easy-to-follow reporting that shows what is improving and where momentum is building.'],
   ] as const;
 
+  const contactEmail = 'hello@restaurantwebpartners.com';
+
   return (
     <div className="min-h-screen bg-[#f7f4ee] text-[#121826]">
       <header className="sticky top-0 z-40 border-b border-white/10 bg-[#05070b]/90 backdrop-blur">
@@ -81,7 +83,7 @@ export default function App() {
             ))}
             <a
               href="#contact"
-              className="rounded-md border border-white/30 px-5 py-3 text-sm uppercase tracking-[0.12em] text-white transition hover:border-[#d8b27a] hover:text-[#d8b27a]"
+              className="rounded-md border border-[#d8b27a]/70 px-5 py-3 text-sm uppercase tracking-[0.12em] text-white transition hover:bg-[#d8b27a] hover:text-[#111827]"
             >
               Book a Call
             </a>
@@ -96,23 +98,32 @@ export default function App() {
             alt="Premium restaurant interior"
             className="absolute inset-0 h-full w-full object-cover opacity-40"
           />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(5,7,11,0.9),rgba(5,7,11,0.72),rgba(5,7,11,0.55))]" />
-          <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(5,7,11,0.94),rgba(5,7,11,0.78),rgba(5,7,11,0.52))]" />
+          <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
             <div className="max-w-3xl">
-              <h1 className="max-w-3xl text-5xl font-medium leading-[1.05] tracking-[-0.03em] text-white lg:text-7xl">
+              <div className="mb-5 inline-flex rounded-full border border-[#d8b27a]/40 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[#d8b27a]">
+                Restaurant websites • SEO • Review trust
+              </div>
+              <h1 className="max-w-3xl text-4xl font-medium leading-[1.06] tracking-[-0.03em] text-white sm:text-5xl lg:text-7xl">
                 Digital Strategy Built for
                 <br />
                 Restaurants That Want Real Growth.
               </h1>
-              <p className="mt-6 max-w-2xl text-xl leading-9 text-white/85">
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-white/85 sm:text-xl sm:leading-9">
                 Websites, SEO, and reputation systems designed around how restaurants actually operate.
               </p>
-              <div className="mt-10 flex flex-wrap gap-4">
+              <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
                 <a
                   href="#contact"
-                  className="rounded-sm bg-[#c79a5b] px-8 py-4 text-sm font-semibold uppercase tracking-[0.14em] text-[#111827] transition hover:bg-[#d8b27a]"
+                  className="rounded-sm bg-[#c79a5b] px-8 py-4 text-center text-sm font-semibold uppercase tracking-[0.14em] text-[#111827] transition hover:bg-[#d8b27a]"
                 >
                   Book a Strategy Call
+                </a>
+                <a
+                  href="#services"
+                  className="rounded-sm border border-white/30 px-8 py-4 text-center text-sm font-semibold uppercase tracking-[0.14em] text-white transition hover:border-[#d8b27a] hover:text-[#d8b27a]"
+                >
+                  View Services
                 </a>
               </div>
             </div>
@@ -121,59 +132,60 @@ export default function App() {
 
         <section id="about" className="bg-[#f7f4ee]">
           <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
-            <div className="grid gap-14 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-              <div>
-                <div className="text-sm font-semibold uppercase tracking-[0.26em] text-[#c79a5b]">About Restaurant Web Partners</div>
-                <h2 className="mt-6 max-w-2xl text-5xl font-medium leading-[1.1] tracking-[-0.03em] text-[#171717]">
-                  We understand restaurants—because we have built from inside them.
-                </h2>
-                <div className="mt-8 h-[2px] w-20 bg-[#c79a5b]" />
-                <p className="mt-8 max-w-2xl text-lg leading-9 text-[#4b5563]">
-                  Restaurant Web Partners was created to help restaurant owners strengthen their digital foundation, attract the right guests, and turn online visibility into real revenue. What makes the agency different is simple: strategy is shaped by years spent working directly inside hospitality, combined with deep digital marketing experience.
-                </p>
-                <p className="mt-5 max-w-2xl text-lg leading-9 text-[#4b5563]">
-                  The foundation behind the business comes from direct hospitality experience — studying hospitality business management internationally, working in hotel operations, and moving into restaurant leadership where guest behavior, revenue performance, and daily operations became practical focus points.
-                </p>
-                <p className="mt-5 max-w-2xl text-lg leading-9 text-[#4b5563]">
-                  Alongside that hospitality foundation came more than ten years of digital marketing work, helping businesses strengthen online visibility, improve digital presentation, and convert attention into measurable growth. That means every recommendation is grounded in how restaurants actually operate, how guests make decisions, and where digital improvements can create practical long-term value.
-                </p>
-                <a
-                  href="#services"
-                  className="mt-10 inline-flex rounded-sm border border-[#c79a5b] px-7 py-4 text-sm font-semibold uppercase tracking-[0.14em] text-[#1f2937] transition hover:bg-[#fffaf2]"
-                >
-                  Learn More About Us
-                </a>
+            <div className="mx-auto mb-12 flex max-w-3xl flex-col items-center text-center">
+              <div className="mb-4 flex items-center gap-3">
+                <span className="h-[3px] w-20 rounded-full bg-[#c79a5b]" />
+                <span className="h-2 w-2 rounded-full bg-[#c79a5b]" />
+              </div>
+              <h2 className="text-4xl font-semibold leading-tight tracking-[-0.03em] text-[#111827] sm:text-5xl lg:text-6xl">
+                About The Founder
+              </h2>
+            </div>
+
+            <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+              <div className="overflow-hidden rounded-xl shadow-xl">
+                <img
+                  src="/parker-founder.jpg"
+                  alt="Parker Morris, founder of Restaurant Web Partners"
+                  className="h-[360px] w-full object-cover object-center sm:h-[460px] lg:h-[520px]"
+                />
               </div>
 
-              <div className="grid gap-6">
-                <img
-                  src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1600&q=80"
-                  alt="Restaurant kitchen in service"
-                  className="h-[420px] w-full rounded-none object-cover shadow-xl"
-                />
-                <div className="rounded-sm border border-[#eadfce] bg-white p-8 shadow-sm">
-                  <div className="text-2xl font-semibold text-[#111827]">Why Clients Relate to This Approach</div>
-                  <div className="mt-4 h-[2px] w-16 bg-[#c79a5b]" />
-                  <div className="mt-5 space-y-5 text-base leading-8 text-[#4b5563]">
-                    <p>Restaurant owners do not need generic marketing language. They need someone who understands service pressure, guest expectations, seasonality, and where digital decisions actually influence revenue.</p>
-                    <p>That means every project starts by understanding the business itself first — before deciding what digital changes matter most.</p>
-                    <p>Every recommendation is shaped around what is practical, measurable, and realistic for the way hospitality businesses actually operate.</p>
+              <div>
+                <div className="text-sm font-bold uppercase tracking-[0.18em] text-[#a66f14]">
+                  Founder & Digital Growth Strategist
+                </div>
+                <h3 className="mt-5 max-w-2xl text-3xl font-semibold leading-tight tracking-[-0.02em] text-[#111827] lg:text-4xl">
+                  Bridging hospitality experience with high-performance digital marketing.
+                </h3>
+                <p className="mt-6 max-w-2xl text-lg leading-9 text-[#4b5563]">
+                  I’m passionate about helping restaurants, cafés, and hospitality brands attract more guests, build trust, and grow revenue through smart websites, SEO, and reputation systems.
+                </p>
+                <p className="mt-5 max-w-2xl text-lg leading-9 text-[#4b5563]">
+                  With a background in restaurant management and over a decade in digital marketing, I understand both sides of the business — operations and growth — and use that perspective to drive real, measurable results.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-12 grid gap-6 md:grid-cols-2">
+              {proofCards.map(([title, copy], index) => (
+                <div key={title} className="rounded-sm border border-[#eadfce] bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                  <div className="flex gap-6">
+                    <div className="hidden h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#f3eee7] text-2xl font-semibold text-[#a66f14] sm:flex">
+                      {index === 0 ? '↗' : index === 1 ? '$' : index === 2 ? '◡' : '✓'}
+                    </div>
+                    <div>
+                      <div className="text-2xl font-semibold leading-tight text-[#111827]">{title}</div>
+                      <div className="mt-3 text-base leading-8 text-[#4b5563]">{copy}</div>
+                    </div>
                   </div>
                 </div>
-                <div className="grid gap-5 sm:grid-cols-2">
-                  {proofCards.map(([title, copy]) => (
-                    <div key={title} className="rounded-sm border border-[#eadfce] bg-white p-6 shadow-sm">
-                      <div className="text-lg font-semibold text-[#111827]">{title}</div>
-                      <div className="mt-3 text-sm leading-7 text-[#4b5563]">{copy}</div>
-                    </div>
-                  ))}
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </section>
 
-        <section id="services" className="bg-white">
+        <section id="services" className="bg-white border-t border-[#eadfce]">
           <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
             <div className="text-center">
               <div className="text-sm font-semibold uppercase tracking-[0.26em] text-[#c79a5b]">Services</div>
@@ -205,14 +217,11 @@ export default function App() {
             </div>
 
             <div className="mt-14 hidden items-stretch gap-5 xl:flex">
-              {processSteps.map(([num, title, copy, icon], index) => (
+              {processSteps.map(([num, title, copy], index) => (
                 <div key={num} className="flex items-stretch gap-5">
                   <div className="flex-1 rounded-sm border border-[#d8b27a] bg-white p-7 shadow-sm">
                     <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#c79a5b] text-2xl font-semibold text-white">
                       {num}
-                    </div>
-                    <div className="mt-8 flex h-16 w-16 items-center justify-center rounded-full border border-[#d8b27a] text-2xl font-semibold text-[#8b6b3f]">
-                      {icon}
                     </div>
                     <div className="mt-6 text-[34px] font-medium leading-tight tracking-[-0.03em] text-[#171717]">{title}</div>
                     <div className="mt-4 h-[2px] w-14 bg-[#c79a5b]" />
@@ -226,19 +235,14 @@ export default function App() {
             </div>
 
             <div className="mt-14 grid gap-6 xl:hidden">
-              {processSteps.map(([num, title, copy, icon], index) => (
+              {processSteps.map(([num, title, copy], index) => (
                 <div key={num} className="rounded-sm border border-[#d8b27a] bg-white p-7 shadow-sm">
                   <div className="flex items-start gap-5">
                     <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#c79a5b] text-2xl font-semibold text-white">
                       {num}
                     </div>
                     <div className="flex-1">
-                      <div className="flex items-center gap-3 text-[#8b6b3f]">
-                        <span className="flex h-12 w-12 items-center justify-center rounded-full border border-[#d8b27a] text-lg font-semibold">
-                          {icon}
-                        </span>
-                        <div className="text-2xl font-medium tracking-[-0.02em] text-[#171717]">{title}</div>
-                      </div>
+                      <div className="text-2xl font-medium tracking-[-0.02em] text-[#171717]">{title}</div>
                       <div className="mt-3 h-[2px] w-14 bg-[#c79a5b]" />
                       <div className="mt-4 text-base leading-8 text-[#4b5563]">{copy}</div>
                     </div>
@@ -296,22 +300,52 @@ export default function App() {
       </main>
 
       <footer id="contact" className="border-t border-[#e7dfd2] bg-white">
-        <div className="mx-auto flex max-w-7xl flex-col gap-8 px-6 py-10 lg:flex-row lg:items-center lg:justify-between lg:px-8">
-          <div className="flex items-start gap-4">
-            <RWPLogo size="sm" light />
-            <div>
-              <div className="text-3xl font-semibold tracking-[-0.02em] text-[#171717]">Ready to Grow Your Restaurant?</div>
-              <div className="mt-2 text-lg leading-8 text-[#4b5563]">
-                Book a strategy call and let us build a plan that drives real results.
-              </div>
+        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-start lg:px-8">
+          <div>
+            <div className="flex items-center gap-4">
+              <RWPLogo size="sm" light />
             </div>
+            <div className="mt-8 text-sm font-semibold uppercase tracking-[0.26em] text-[#c79a5b]">Start the conversation</div>
+            <h2 className="mt-5 max-w-xl text-4xl font-medium leading-[1.1] tracking-[-0.03em] text-[#171717]">
+              Ready to see where your restaurant could be stronger online?
+            </h2>
+            <p className="mt-5 max-w-xl text-lg leading-8 text-[#4b5563]">
+              Send a quick note and we will review where your website, SEO, and reputation systems can better support visibility, trust, and long-term growth.
+            </p>
+            <a
+              href={`mailto:${contactEmail}`}
+              className="mt-8 inline-flex rounded-sm border border-[#c79a5b] px-7 py-4 text-sm font-semibold uppercase tracking-[0.14em] text-[#1f2937] transition hover:bg-[#fffaf2]"
+            >
+              Email Directly
+            </a>
           </div>
-          <a
-            href="#"
-            className="inline-flex rounded-sm bg-[#c79a5b] px-8 py-4 text-sm font-semibold uppercase tracking-[0.16em] text-[#111827] transition hover:bg-[#d8b27a]"
-          >
-            Book a Strategy Call
-          </a>
+
+          <form action={`mailto:${contactEmail}`} method="post" encType="text/plain" className="rounded-sm border border-[#eadfce] bg-[#fcfaf6] p-8 shadow-sm">
+            <div className="grid gap-5 sm:grid-cols-2">
+              <label className="grid gap-2 text-sm font-semibold text-[#111827]">
+                Name
+                <input name="name" className="rounded-sm border border-[#eadfce] bg-white px-4 py-3 text-base font-normal outline-none transition focus:border-[#c79a5b]" placeholder="Your name" />
+              </label>
+              <label className="grid gap-2 text-sm font-semibold text-[#111827]">
+                Restaurant
+                <input name="restaurant" className="rounded-sm border border-[#eadfce] bg-white px-4 py-3 text-base font-normal outline-none transition focus:border-[#c79a5b]" placeholder="Restaurant name" />
+              </label>
+              <label className="grid gap-2 text-sm font-semibold text-[#111827] sm:col-span-2">
+                Email
+                <input name="email" type="email" className="rounded-sm border border-[#eadfce] bg-white px-4 py-3 text-base font-normal outline-none transition focus:border-[#c79a5b]" placeholder="you@example.com" />
+              </label>
+              <label className="grid gap-2 text-sm font-semibold text-[#111827] sm:col-span-2">
+                What would you like help improving?
+                <textarea name="message" className="min-h-[140px] rounded-sm border border-[#eadfce] bg-white px-4 py-3 text-base font-normal outline-none transition focus:border-[#c79a5b]" placeholder="Website, SEO, reviews, monthly support, or overall digital growth..." />
+              </label>
+            </div>
+            <button type="submit" className="mt-6 w-full rounded-sm bg-[#c79a5b] px-8 py-4 text-sm font-semibold uppercase tracking-[0.16em] text-[#111827] transition hover:bg-[#d8b27a]">
+              Send Inquiry
+            </button>
+            <p className="mt-4 text-center text-sm leading-6 text-[#6b7280]">
+              You will work directly with someone who understands restaurant operations and digital growth.
+            </p>
+          </form>
         </div>
       </footer>
     </div>
