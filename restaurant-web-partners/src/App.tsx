@@ -56,7 +56,7 @@ export default function HospitalityGrowthAgencyWebsite() {
 
   const proofCards = [
     ['10+ years digital marketing', 'A decade of hands-on experience building stronger digital positioning for hospitality brands.'],
-    ['$270K hospitality sales annually proof', 'Real hospitality performance that reflects operational awareness and revenue understanding.'],
+    ['Personally generated $270K+ in annual hospitality sales', 'Built through attentive service, thoughtful upselling, strong efficiency, and consistently delivering a guest experience that drives repeat business.'],
     ['Restaurant management experience', 'A practical understanding of how restaurants operate, serve, and grow from the inside.'],
     ['Built for long-term hospitality businesses', 'Designed for owners who value consistency, trust, and sustainable growth over time.'],
   ] as const;
@@ -142,18 +142,7 @@ export default function HospitalityGrowthAgencyWebsite() {
               </h2>
             </div>
 
-            <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-              <div className="rounded-xl border border-[#eadfce] bg-white p-10 shadow-xl flex items-center justify-center min-h-[360px] sm:min-h-[460px] lg:min-h-[520px]">
-                <div className="text-center">
-                  <div className="text-sm font-bold uppercase tracking-[0.18em] text-[#a66f14]">Founder</div>
-                  <div className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-[#111827]">Parker Morris</div>
-                  <div className="mt-4 h-[2px] w-20 bg-[#c79a5b] mx-auto" />
-                  <div className="mt-5 text-lg leading-8 text-[#4b5563] max-w-sm">
-                    Hospitality experience combined with digital growth strategy built specifically for restaurants.
-                  </div>
-                </div>
-              </div>
-
+            <div className="grid gap-10 lg:grid-cols-1 lg:items-center">
               <div>
                 <div className="text-sm font-bold uppercase tracking-[0.18em] text-[#a66f14]">
                   Founder & Digital Growth Strategist
@@ -354,3 +343,4 @@ export default function HospitalityGrowthAgencyWebsite() {
     </div>
   );
 }
+
