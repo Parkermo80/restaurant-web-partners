@@ -143,12 +143,15 @@ export default function HospitalityGrowthAgencyWebsite() {
             </div>
 
             <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-              <div className="overflow-hidden rounded-xl shadow-xl">
-                <img
-                  src="/parker-founder.jpg"
-                  alt="Parker Morris, founder of Restaurant Web Partners"
-                  className="h-[360px] w-full object-cover object-center sm:h-[460px] lg:h-[520px]"
-                />
+              <div className="rounded-xl border border-[#eadfce] bg-white p-10 shadow-xl flex items-center justify-center min-h-[360px] sm:min-h-[460px] lg:min-h-[520px]">
+                <div className="text-center">
+                  <div className="text-sm font-bold uppercase tracking-[0.18em] text-[#a66f14]">Founder</div>
+                  <div className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-[#111827]">Parker Morris</div>
+                  <div className="mt-4 h-[2px] w-20 bg-[#c79a5b] mx-auto" />
+                  <div className="mt-5 text-lg leading-8 text-[#4b5563] max-w-sm">
+                    Hospitality experience combined with digital growth strategy built specifically for restaurants.
+                  </div>
+                </div>
               </div>
 
               <div>
